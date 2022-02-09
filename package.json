@@ -1,7 +1,7 @@
 {
 	"name": "disnake-code-snippets",
 	"displayName": "Disnake Code Snippets",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Code-snippets for more efficient bot development with disnake.",
 	"publisher": "AbhigyanTrips",
 	"homepage": "https://github.com/abhigyantrips/disnake-code-snippets#readme",
