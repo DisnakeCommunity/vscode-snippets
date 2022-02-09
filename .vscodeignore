@@ -6,7 +6,7 @@
 .gitattributes
 .gitignore
 .github/**
-assets/**
+.editorconfig
 
 # Meta
 LICENSE
