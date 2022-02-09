@@ -1,0 +1,18 @@
+# VSCode
+.vscode/**
+.vscode-test/**
+
+# Git
+.gitattributes
+.gitignore
+.github/**
+assets/**
+
+# Meta
+LICENSE
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+
+# Testing
+*.py
+*.vsix

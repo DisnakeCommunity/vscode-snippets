@@ -1,0 +1,7 @@
+# VSCode
+.vscode/**
+.vscode-test/**
+
+#Testing
+*.py
+*.vsix

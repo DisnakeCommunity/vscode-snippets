@@ -1,0 +1,75 @@
+{
+    "Disnake Main Template": {
+        "prefix": "!dstart",
+        "body": [
+            "import disnake",
+            "from disnake.ext import commands",
+            "",
+            "",
+            "bot = commands.Bot(command_prefix=\"${1:!}\")",
+            "",
+            "",
+            "@bot.event",
+            "async def on_ready():",
+            "    print(f\"Logged in as {bot.user}.\")",
+            "",
+            "",
+            "bot.run(\"${2:BOT_TOKEN}\")",
+            ""
+        ],
+    },
+    "Disnake Prefix Command Template": {
+        "prefix": "!cmd",
+        "description": "A command template",
+        "body": [
+            "@${1|bot,client|}.command(${2:aliases=[\"$3\"]})",
+            "async def ${4:command_name}(ctx$5):",
+            "    $0"
+        ],
+    },
+    "Disnake Event Template": {
+        "prefix": "!evt",
+        "description": "An event template",
+        "body": [
+            "@${1|bot,client|}.event",
+            "async def on_$2($3):",
+            "    $0"
+        ],
+    },
+    "Disnake Cog Command Template": {
+        "prefix": "!cogcmd",
+        "description": "A prefix command template for cogs",
+        "body": [
+            "@commands.command(${1:aliases=[\"$2\"]})",
+            "async def ${3:command_name}(self, ctx$4):",
+            "\t$0"
+        ],
+    },
+    "Disnake Cog Event Template": {
+        "prefix": "!cogevt",
+        "body": [
+            "@commands.Cog.listener()",
+            "async def on_$1(self, $2):",
+            "    $0"
+        ],
+    },
+    "Disnake Cog Template": {
+        "prefix": "!cog",
+        "body": [
+            "import disnake",
+            "from disnake.ext import commands",
+            "",
+            "",
+            "class ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}(commands.Cog):",
+            "",
+            "    def __init__(self, bot):",
+            "        self.bot = bot",
+            "",
+            "    $0",
+            "",
+            "def setup(bot):",
+            "    bot.add_cog(${1:CogName}(bot))",
+            ""
+        ],
+    },
+}
