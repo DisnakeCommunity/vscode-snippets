@@ -1,36 +1,40 @@
 {
-  "name": "disnake-code-snippets",
-  "displayName": "Disnake Code Snippets",
-  "description": "Code-snippets for more efficient Discord bot development with disnake.",
-  "version": "1.0.0",
-  "publisher": "AbhigyanTrips",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/abhigyantrips/disnake-code-snippets"
-  },
-  "icon": "icon.png",
-  "license": "MIT",
-  "engines": {
-    "vscode": "^1.18.0"
-  },
-  "keywords": [
-    "discord.py",
-    "disnake",
-    "discord",
-    "discord bot",
-    "discord snippets",
-    "discord.py snippets",
-    "disnake snippets"
-  ],
-  "categories": [
-    "Snippets"
-  ],
-  "contributes": {
-    "snippets": [
-      {
-        "language": "python",
-        "path": "./snippets/snippets.code-snippets"
-      }
-    ]
-  }
+	"name": "disnake-code-snippets",
+	"displayName": "Disnake Code Snippets",
+	"version": "1.0.0",
+	"description": "Code-snippets for more efficient bot development with disnake.",
+	"publisher": "AbhigyanTrips",
+	"homepage": "https://github.com/abhigyantrips/disnake-code-snippets#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/abhigyantrips/disnake-code-snippets"
+	},
+	"bugs": {
+		"url": "https://github.com/abhigyantrips/disnake-code-snippets/issues"
+	},
+	"icon": "assets/icon.png",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+  	"keywords": [
+		"discord.py",
+		"disnake",
+		"discord",
+		"discord bot",
+		"discord snippets",
+		"discord.py snippets",
+		"disnake snippets"
+	],
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+	  		{
+				"language": "python",
+				"path": "./snippets/snippets.code-snippets"
+	  		}
+		]
+	}
 }
