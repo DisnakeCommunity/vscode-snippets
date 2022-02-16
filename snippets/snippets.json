@@ -1,6 +1,7 @@
 {
     "Disnake Main File": {
         "prefix": ["dis.main", "dis.template", "dis.bot"],
+        "description": "A template main file for a bot",
         "body": [
             "import disnake",
             "from disnake.ext import commands",
@@ -16,37 +17,38 @@
             "",
             "bot.run(\"${2:BOT_TOKEN}\")",
             ""
-        ],
+        ]
     },
     "Disnake Prefix Command": {
         "prefix": ["dis.cmd", "dis.command", "dis.prefix"],
-        "description": "A command template",
+        "description": "A prefix command",
         "body": [
             "@${1|bot,client|}.command(${2:aliases=[\"$3\"]})",
             "async def ${4:command_name}(ctx$5):",
             "\t$0"
-        ],
+        ]
     },
     "Disnake Slash Command": {
-        "prefix": "dis.slash",
-        "description": "A slash command template",
+        "prefix": ["dis.slash", "dis.slash_command", "dis.slash_cmd"],
+        "description": "A slash command",
         "body": [
             "@${1|bot,client|}.slash_command({2:guild_ids=[\"$3\"]})",
             "async def ${4:command_name}(ctx$5):",
             "\t$0"
-        ],
+        ]
     },
     "Disnake Event": {
-        "prefix": "dis.evt",
+        "prefix": ["dis.evt", "dis.event", "dis.on"],
         "description": "An event template",
         "body": [
             "@${1|bot,client|}.event",
             "async def on_$2($3):",
             "\t$0"
-        ],
+        ]
     },
     "Disnake Cog": {
         "prefix": "dis.cog",
+        "description": "A template file for cogs",
         "body": [
             "import disnake",
             "from disnake.ext import commands",
@@ -62,23 +64,33 @@
             "def setup(bot):",
             "\tbot.add_cog(${1:CogName}(bot))",
             ""
-        ],
+        ]
     },
     "Disnake Cog Command": {
         "prefix": "dis.cog.cmd",
-        "description": "A prefix command template for cogs",
+        "description": "A prefix command for cogs",
         "body": [
             "@commands.command(${1:aliases=[\"$2\"]})",
             "async def ${3:command_name}(self, ctx$4):",
             "\t$0"
-        ],
+        ]
+    },
+    "Disnake Cog Slash Command": {
+        "prefix": ["dis.cog.slash", "dis.cog.slash_command", "dis.cog.slash_cmd"],
+        "description": "A slash command for cogs",
+        "body": [
+            "@${1|bot,client|}.slash_command({2:guild_ids=[\"$3\"]})",
+            "async def ${4:command_name}(ctx$5):",
+            "\t$0"
+        ]
     },
     "Disnake Cog Event": {
         "prefix": "dis.cog.evt",
+        "description": "An event template for cogs",
         "body": [
             "@commands.Cog.listener()",
             "async def on_$1(self, $2):",
             "\t$0"
-        ],
-    },
+        ]
+    }
 }
