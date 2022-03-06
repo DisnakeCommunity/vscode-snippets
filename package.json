@@ -33,7 +33,11 @@
 		"snippets": [
 	  		{
 				"language": "python",
-				"path": "./snippets/snippets.json"
+				"path": "./snippets/templates.json"
+	  		},
+			{
+				"language": "python",
+				"path": "./snippets/events.json"
 	  		}
 		]
 	}
