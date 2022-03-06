@@ -1,0 +1,770 @@
+{
+    "Disnake on_connect event": {
+        "prefix": "dis.on_connect",
+        "description": "A Discord bot on_connect event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_connect(${2:self}):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_shard_connect event": {
+        "prefix": "dis.on_shard_connect",
+        "description": "A Discord bot on_shard_connect event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_shard_connect(${2:self, }shard_id: int):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_disconnect event": {
+        "prefix": "dis.on_disconnect",
+        "description": "A Discord bot on_disconnect event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_disconnect(${2:self}):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_shard_disconnect event": {
+        "prefix": "dis.on_shard_disconnect",
+        "description": "A Discord bot on_shard_disconnect event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_shard_disconnect(${2:self, }shard_id: int):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_ready event": {
+        "prefix": "dis.on_ready",
+        "description": "A Discord bot on_ready event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_ready(${2:self}):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_shard_ready event": {
+        "prefix": "dis.on_shard_ready",
+        "description": "A Discord bot on_shard_ready event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_shard_ready(${2:self, }shard_id: int):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_resumed event": {
+        "prefix": "dis.on_resumed",
+        "description": "A Discord bot on_resumed event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_resumed(${2:self}):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_shard_resumed event": {
+        "prefix": "dis.on_shard_resumed",
+        "description": "A Discord bot on_shard_resumed event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_shard_resumed(${2:self, }shard_id: int):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_error event": {
+        "prefix": "dis.on_error",
+        "description": "A Discord bot on_error event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_error(${2:self, }event: str, *args, **kwargs):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_socket_event_type": {
+        "prefix": "dis.on_socket_event_type",
+        "description": "A Discord bot on_socket_event_type event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_socket_event_type(${2:self, }event_type: str):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_socket_raw_receive event": {
+        "prefix": "dis.on_socket_raw_receive",
+        "description": "A Discord bot on_socket_raw_receive event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_socket_raw_receive(${2:self, }message: str|bytes):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_socket_raw_send event": {
+        "prefix": "dis.on_socket_raw_send",
+        "description": "A Discord bot on_socket_raw_send event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_socket_raw_send(${2:self, }payload: str|bytes):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_typing event": {
+        "prefix": "dis.on_typing",
+        "description": "A Discord bot on_typing event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_typing(self,",
+            "\tchannel: disnake.abc.Messageable,",
+            "\tuser: disnake.Member|disnake.User,",
+            "\twhen: datetime.datetime):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_typing event": {
+        "prefix": "dis.on_raw_typing",
+        "description": "A Discord bot on_raw_typing event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_typing((${2:self, }data: disnake.RawTypingEvent)",
+            "\t$0"
+        ]
+    },
+    "Disnake on_message event": {
+        "prefix": "dis.on_message",
+        "description": "A Discord bot on_message event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_message(${2:self, }message: disnake.Message):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_message_delete event": {
+        "prefix": "dis.on_message_delete",
+        "description": "A Discord bot on_message_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_message_delete(${2:self, }message: disnake.Message):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_message_delete event": {
+        "prefix": "dis.on_raw_message_delete",
+        "description": "A Discord bot on_raw_message_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_message_delete(${2:self, }payload: disnake.RawBulkMessageDeleteEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_bulk_message_delete event": {
+        "prefix": "dis.on_bulk_message_delete",
+        "description": "A Discord bot on_bulk_message_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_bulk_message_delete(${2:self, }messages: list):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_bulk_message_delete event": {
+        "prefix": "dis.on_raw_bulk_message_delete",
+        "description": "A Discord bot on_raw_bulk_message_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_bulk_message_delete(${2:self, }payload: disnake.RawBulkMessageDeleteEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_message_edit event": {
+        "prefix": "dis.on_message_edit",
+        "description": "A Discord bot on_message_edit event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_message_edit(${2:self, }before: disnake.Message, after: disnake.Message):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_message_edit event": {
+        "prefix": "dis.on_raw_message_edit",
+        "description": "A Discord bot on_raw_message_edit event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_message_edit(${2:self, }payload: disnake.RawMessageUpdateEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_reaction_add event": {
+        "prefix": "dis.on_reaction_add",
+        "description": "A Discord bot on_reaction_add event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_reaction_add(${2:self, }reaction: disnake.Reaction, user: disnake.Member|disnake.User):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_reaction_add event": {
+        "prefix": "dis.on_raw_reaction_add",
+        "description": "A Discord bot on_raw_reaction_add event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_reaction_add(${2:self, }payload: disnake.RawReactionActionEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_reaction_remove event": {
+        "prefix": "dis.on_reaction_remove",
+        "description": "A Discord bot on_reaction_remove event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_reaction_remove(${2:self, }reaction: disnake.Reaction, user: disnake.Member|disnake.User):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_reaction_remove event": {
+        "prefix": "dis.on_raw_reaction_remove",
+        "description": "A Discord bot on_raw_reaction_remove event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_reaction_remove(${2:self, }payload: disnake.RawReactionActionEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_reaction_clear event": {
+        "prefix": "dis.on_reaction_clear",
+        "description": "A Discord bot on_reaction_clear event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_reaction_clear(${2:self, }message: disnake.Message, reactions: list):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_reaction_clear event": {
+        "prefix": "dis.on_raw_reaction_clear",
+        "description": "A Discord bot on_raw_reaction_clear event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_reaction_clear(${2:self, }payload: disnake.RawReactionClearEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_reaction_clear_emoji event": {
+        "prefix": "dis.on_reaction_clear_emoji",
+        "description": "A Discord bot on_reaction_clear_emoji event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_reaction_clear_emoji(${2:self, }reaction: disnake.Reaction):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_reaction_clear_emoji event": {
+        "prefix": "dis.on_raw_reaction_clear_emoji",
+        "description": "A Discord bot on_raw_reaction_clear_emoji event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_reaction_clear_emoji(${2:self, }payload: disnake.RawReactionClearEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_interaction event": {
+        "prefix": "dis.on_interaction",
+        "description": "A Discord bot on_interaction event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_interaction(${2:self, }inter: disnake.Interaction):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_message_interaction event": {
+        "prefix": "dis.on_message_interaction",
+        "description": "A Discord bot on_message_interaction event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_message_interaction(${2:self, }inter: disnake.MessageInteraction):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_button_click event": {
+        "prefix": "dis.on_button_click",
+        "description": "A Discord bot on_button_click event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_button_click(${2:self, }inter: disnake.MessageInteraction):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_dropdown event": {
+        "prefix": "dis.on_dropdown",
+        "description": "A Discord bot on_dropdown event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_dropdown(${2:self, }inter: disnake.MessageInteraction):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_application_command event": {
+        "prefix": "dis.on_application_command",
+        "description": "A Discord bot on_application_command event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_application_command(${2:self, }inter: disnake.ApplicationCommandInteraction):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_application_command_autocomplete event": {
+        "prefix": "dis.on_application_command_autocomplete",
+        "description": "A Discord bot on_application_command_autocomplete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_application_command_autocomplete(${2:self, }inter: disnake.ApplicationCommandInteraction):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_modal_submit event": {
+        "prefix": "dis.on_modal_submit",
+        "description": "A Discord bot on_modal_submit event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_modal_submit(${2:self, }inter: disnake.ModalInteraction):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_private_channel_update event": {
+        "prefix": "dis.on_private_channel_update",
+        "description": "A Discord bot on_private_channel_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_private_channel_update(${2:self, }before: disnake.GroupChannel, after: disnake.GroupChannel):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_private_channel_pins_update event": {
+        "prefix": "dis.on_private_channel_pins_update",
+        "description": "A Discord bot on_private_channel_pins_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_private_channel_pins_update(${2:self, }channel: disnake.abc.PrivateChannel, last_pin: datetime.datetime):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_channel_delete event": {
+        "prefix": "dis.on_guild_channel_delete",
+        "description": "A Discord bot on_guild_channel_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_channel_delete(${2:self, }channel: disnake.abc.GuildChannel):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_channel_create event": {
+        "prefix": "dis.on_guild_channel_create",
+        "description": "A Discord bot on_guild_channel_create event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_channel_create(${2:self, }channel: disnake.abc.GuildChannel):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_channel_update event": {
+        "prefix": "dis.on_guild_channel_update",
+        "description": "A Discord bot on_guild_channel_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_channel_update(${2:self, }before: disnake.abc.GuildChannel, after: disnake.abc.GuildChannel):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_channel_pins_update event": {
+        "prefix": "dis.on_guild_channel_pins_update",
+        "description": "A Discord bot on_guild_channel_pins_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_channel_pins_update(${2:self, }channel: disnake.abc.GuildChannel, last_pin: datetime.datetime):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_thread_join event": {
+        "prefix": "dis.on_thread_join",
+        "description": "A Discord bot on_thread_join event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_thread_join(${2:self, }thread: disnake.Thread):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_thread_remove event": {
+        "prefix": "dis.on_thread_remove",
+        "description": "A Discord bot on_thread_remove event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_thread_remove(${2:self, }thread: disnake.Thread):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_thread_delete event": {
+        "prefix": "dis.on_thread_delete",
+        "description": "A Discord bot on_thread_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_thread_delete(${2:self, }thread: disnake.Thread):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_thread_member_join event": {
+        "prefix": "dis.on_thread_member_join",
+        "description": "A Discord bot on_thread_member_join event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_thread_member_join(${2:self, }member: disnake.ThreadMember):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_thread_member_remove event": {
+        "prefix": "dis.on_thread_member_remove",
+        "description": "A Discord bot on_thread_member_remove event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_thread_member_remove(${2:self, }member: disnake.ThreadMember):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_thread_update event": {
+        "prefix": "dis.on_thread_update",
+        "description": "A Discord bot on_thread_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_thread_update(${2:self, }before: disnake.Thread, after: disnake.Thread):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_integrations_update event": {
+        "prefix": "dis.on_guild_integrations_update",
+        "description": "A Discord bot on_guild_integrations_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_integrations_update(${2:self, }guild: disnake.Guild):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_integration_create event": {
+        "prefix": "dis.on_integration_create",
+        "description": "A Discord bot on_integration_create event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_integration_create(${2:self, }integration: disnake.Integration):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_integration_update event": {
+        "prefix": "dis.on_integration_update",
+        "description": "A Discord bot on_integration_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_integration_update(${2:self, }integration: disnake.Integration):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_integration_delete event": {
+        "prefix": "dis.on_raw_integration_delete",
+        "description": "A Discord bot on_raw_integration_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_integration_delete(${2:self, }payload: disnake.RawIntegrationDeleteEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_webhooks_update event": {
+        "prefix": "dis.on_webhooks_update",
+        "description": "A Discord bot on_webhooks_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_webhooks_update(${2:self, }channel: disnake.abc.GuildChannel):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_member_join event": {
+        "prefix": "dis.on_member_join",
+        "description": "A Discord bot on_member_join event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_member_join(${2:self, }member: disnake.Member):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_member_remove event": {
+        "prefix": "dis.on_member_remove",
+        "description": "A Discord bot on_member_remove event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_member_remove(${2:self, }member: disnake.Member):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_member_update event": {
+        "prefix": "dis.on_member_update",
+        "description": "A Discord bot on_member_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_member_update(${2:self, }before: disnake.Member, after: disnake.Member):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_user_update event": {
+        "prefix": "dis.on_user_update",
+        "description": "A Discord bot on_user_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_user_update(${2:self, }before: disnake.User, after: disnake.User):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_presence_update event": {
+        "prefix": "dis.on_presence_update",
+        "description": "A Discord bot on_presence_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_presence_update(${2:self, }before: disnake.Member, after: disnake.Member):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_join event": {
+        "prefix": "dis.on_guild_join",
+        "description": "A Discord bot on_guild_join event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_join(${2:self, }guild: disnake.Guild):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_remove event": {
+        "prefix": "dis.on_guild_remove",
+        "description": "A Discord bot on_guild_remove event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_remove(${2:self, }guild: disnake.Guild):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_update event": {
+        "prefix": "dis.on_guild_update",
+        "description": "A Discord bot on_guild_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_update(${2:self, }before: disnake.Guild, after: disnake.Guild):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_role_create event": {
+        "prefix": "dis.on_guild_role_create",
+        "description": "A Discord bot on_guild_role_create event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_role_create(${2:self, }role: disnake.Role):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_role_delete event": {
+        "prefix": "dis.on_guild_role_delete",
+        "description": "A Discord bot on_guild_role_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_role_delete(${2:self, }role: disnake.Role):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_role_update event": {
+        "prefix": "dis.on_guild_role_update",
+        "description": "A Discord bot on_guild_role_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_role_update(${2:self, }before: disnake.Role, after: disnake.Role):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_emojis_update event": {
+        "prefix": "dis.on_guild_emojis_update",
+        "description": "A Discord bot on_guild_emojis_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_emojis_update(${2:self, }guild: disnake.Guild, before, after):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_stickers_update event": {
+        "prefix": "dis.on_guild_stickers_update",
+        "description": "A Discord bot on_guild_stickers_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_stickers_update(${2:self, }guild: disnake.Guild, before, after):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_available event": {
+        "prefix": "dis.on_guild_available",
+        "description": "A Discord bot on_guild_available event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_available(${2:self, }guild: disnake.Guild):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_unavailable event": {
+        "prefix": "dis.on_guild_unavailable",
+        "description": "A Discord bot on_guild_unavailable event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_unavailable(${2:self, }guild: disnake.Guild):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_voice_state_update event": {
+        "prefix": "dis.on_voice_state_update",
+        "description": "A Discord bot on_voice_state_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_voice_state_update(${2:self, }member: disnake.Member, before: disnake.VoiceState, after: disnake.VoiceState):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_scheduled_event_create event": {
+        "prefix": "dis.on_guild_scheduled_event_create",
+        "description": "A Discord bot on_guild_scheduled_event_create event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_scheduled_event_create(${2:self, }event: disnake.GuildScheduledEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_scheduled_event_delete event": {
+        "prefix": "dis.on_guild_scheduled_event_delete",
+        "description": "A Discord bot on_guild_scheduled_event_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_scheduled_event_delete(${2:self, }event: disnake.GuildScheduledEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_scheduled_event_update event": {
+        "prefix": "dis.on_guild_scheduled_event_update",
+        "description": "A Discord bot on_guild_scheduled_event_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_scheduled_event_update(${2:self, }before: disnake.GuildScheduledEvent, after: disnake.GuildScheduledEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_scheduled_event_subscribe event": {
+        "prefix": "dis.on_guild_scheduled_event_subscribe",
+        "description": "A Discord bot on_guild_scheduled_event_subscribe event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_scheduled_event_subscribe(${2:self, }event: disnake.GuildScheduledEvent, user):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_guild_scheduled_event_unsubscribe event": {
+        "prefix": "dis.on_guild_scheduled_event_unsubscribe",
+        "description": "A Discord bot on_guild_scheduled_event_unsubscribe event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_guild_scheduled_event_unsubscribe(${2:self, }event: disnake.GuildScheduledEvent, user):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_guild_scheduled_event_subscribe event": {
+        "prefix": "dis.on_raw_guild_scheduled_event_subscribe",
+        "description": "A Discord bot on_raw_guild_scheduled_event_subscribe event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_guild_scheduled_event_subscribe(${2:self, }payload: disnake.RawGuildScheduledEventUserActionEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_raw_guild_scheduled_event_unsubscribe event": {
+        "prefix": "dis.on_raw_guild_scheduled_event_unsubscribe",
+        "description": "A Discord bot on_raw_guild_scheduled_event_unsubscribe event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_raw_guild_scheduled_event_unsubscribe(${2:self, }payload: disnake.RawGuildScheduledEventUserActionEvent):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_stage_instance_create event": {
+        "prefix": "dis.on_stage_instance_create",
+        "description": "A Discord bot on_stage_instance_create event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_stage_instance_create(${2:self, }stage_instance: disnake.StageInstance):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_stage_instance_delete event": {
+        "prefix": "dis.on_stage_instance_delete",
+        "description": "A Discord bot on_stage_instance_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_stage_instance_delete(${2:self, }stage_instance: disnake.StageInstance):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_stage_instance_update event": {
+        "prefix": "dis.on_stage_instance_update",
+        "description": "A Discord bot on_stage_instance_update event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_stage_instance_update(${2:self, }before: disnake.StageInstance, after: disnake.StageInstance):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_member_ban event": {
+        "prefix": "dis.on_member_ban",
+        "description": "A Discord bot on_member_ban event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_member_ban(${2:self, }guild: disnake.Guild, user: disnake.User):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_member_unban event": {
+        "prefix": "dis.on_member_unban",
+        "description": "A Discord bot on_member_unban event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_member_unban(${2:self, }guild: disnake.Guild, user: disnake.User):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_invite_create event": {
+        "prefix": "dis.on_invite_create",
+        "description": "A Discord bot on_invite_create event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_invite_create(${2:self, }invite: disnake.Invite):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_invite_delete event": {
+        "prefix": "dis.on_invite_delete",
+        "description": "A Discord bot on_invite_delete event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_invite_delete(${2:self, }invite: disnake.Invite):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_group_join event": {
+        "prefix": "dis.on_group_join",
+        "description": "A Discord bot on_group_join event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_group_join(${2:self, }channel: disnake.GroupChannel, user: disnake.User):",
+            "\t$0"
+        ]
+    },
+    "Disnake on_group_remove event": {
+        "prefix": "dis.on_group_remove",
+        "description": "A Discord bot on_group_remove event.",
+        "body": [
+            "@${1|bot.event,client.event,commands.Cog.listener()|}",
+            "async def on_group_remove(${2:self, }channel: disnake.GroupChannel, user: disnake.User):",
+            "\t$0"
+        ]
+    }
+}
